@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "runAjax";
+}
+<script type="text/javascript">
+    function ajax() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/Home/Index");
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                alert(xhr.responseText);
+            }
+        };
+
+        xhr.send(null);
+    };
+</script>
+
+<h2>runAjax</h2>
+
+<input type="button" name="btnAjax" value="Click to run Ajax" onclick="ajax();" id="btnAjax" />
+
+
