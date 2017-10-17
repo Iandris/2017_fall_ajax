@@ -5,6 +5,64 @@
 		<script type ="text/javascript" src="./burrito.js"></script>
 	</head>
 	<body onload="init();">
-
+		<form>
+		<table>
+			<tr>
+				<td>
+					<label>Choose your burrito: </label>
+				</td>
+				<td>			
+					<select id="meat">
+						<option value="Chicken">Chicken - $6.20</option>
+						<option value="Steak">Steak - $6.75</option>
+						<option value="Carnitas">Carnitas -$6.60</option>
+						<option value="Barbacoa">Barbacoa -$6.60</option>
+						<option value="Vegetarian">Vegetarian -$6.20</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Select a rice:</label>
+				</td>
+				<td>
+					<input type="radio" name="rice" Value="White" id="riceW"><label for="riceW">White Rice</label></input>
+					<input type="radio" name="rice" Value="Brown" id="riceB"><label for="riceB">Brown Rice</label></input>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Which Type of Beans:</label>
+				</td>
+				<td>
+					<input type="radio" name="beans" Value="Pinto" id="beanP"><label for="beanP">Pinto Beans</label></input>
+					<input type="radio" name="beans" Value="Black" id="beanB"><label for="beanB">Black Beans</label></input>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Choose Salsa(s):</label>
+				</td>
+				<td>
+					<input type="checkbox" class="salsa" id="pico" value="pico" /><label for="pico">Pico De Gallo</label>
+					<input type="checkbox" class="salsa"  id="corn" value="corn" /><label for="corn">Roasted Corn</label>
+					<input type="checkbox" class="salsa"  id="tomatilloG" value="tomatilloG" /><label for="tomatilloG">Tomatillo - Green</label>
+					<input type="checkbox" class="salsa"  id="tomatilloR" value="tomatilloR" /><label for="tomatilloR">Tomatillo - Red</label>				
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Add Guacamole $1.40</label>
+				</td>
+				<td>
+					<input type="checkbox" id="guac" value="guac" />
+				</td>
+			</tr>
+		</table>
+		
+		<input type="button" value="add burrito to order" id="btnAdd" />
+		</form>		
+		<hr />
+		<br /><br />
 	</body>
 </html>
